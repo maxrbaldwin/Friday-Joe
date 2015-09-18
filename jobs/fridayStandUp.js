@@ -8,7 +8,7 @@ var bot = new SlackBot({
 
 // The task this bot does
 var fridayStandUpTask = function(){
-  var message = "What is everyone up to on this Friday morning?";
+  var message = "@here What is everyone up to on this Friday morning?";
   bot.postMessageToChannel(process.env.channel, message);
 };
 
